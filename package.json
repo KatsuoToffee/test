@@ -1,0 +1,26 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto de node js",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Katsuo-EE@bitbucket.org/Katsuo-EE/guia-hoteles.git"
+  },
+  "author": "Nahuel Erick Paiva",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/Katsuo-EE/guia-hoteles#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "open-iconic": "^1.1.1",
+    "popper.js": "^1.14.3"
+  }
+}

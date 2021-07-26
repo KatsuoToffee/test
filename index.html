@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <title>App web</title>
+</head>
+
+<body>
+    <!--navbar-expand-md responsive-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top"
+         style="background-color: #1a3a1b;">
+        <a class= "navbar-brand" href="#">Hoteles Katsuo</a>
+        <button class="navbar-toggler" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+
+            <span class= "navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="./precios.html">Precios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Terminos</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contacto.html">Contactos</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <h1>Hoteles Katsuo Lorem Ipsum</h1></div>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class = "breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+        </nav>
+        <!-- usando flex en vez de row -->
+        <div class="d-flex">
+            <div class="col-sm-4">
+                <p>
+                    <h5>Lorem ipsum </h5>
+                    <h8>Vivamus facilisis lorem non feugiat ultrices. Donec semper enim velit, eget euismod augue dignissim sit amet. Nullam ornare congue elementum. In id efficitur velit. Pellentesque a convallis nulla. Mauris at arcu ac eros sagittis pellentesque eget et dolor. Morbi neque purus, vestibulum non molestie in, iaculis id nibh. Vivamus tortor dui, varius ut fringilla quis, condimentum faucibus magna. Integer dictum, metus ut elementum hendrerit, sapien ipsum mattis ex, gravida auctor massa orci id ipsum. Phasellus aliquet ante a nunc lacinia, in tempus diam interdum.</h8>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <p>
+                    <h5>Lorem ipsum </h5>
+                    <h8>Vestibulum hendrerit pretium ligula, vel tristique orci mollis sit amet. Pellentesque imperdiet egestas elit at tempus. Nunc condimentum libero sodales tellus eleifend, et malesuada erat accumsan. Etiam in rutrum mauris. Praesent iaculis malesuada nibh finibus posuere</h8>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <p>
+                    <h5>Lorem ipsum </h5>
+                    <h8>Vestibulum hendrerit pretium ligula, vel tristique orci mollis sit amet. Pellentesque imperdiet egestas elit at tempus. Nunc condimentum libero sodales tellus eleifend, et malesuada erat accumsan. Etiam in rutrum mauris. Praesent iaculis malesuada nibh finibus posuere</h8>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <!--
+            importante clase img-fluid para mantener responsive
+
+            recomendado imgenes vectorizadas
+        -->
+        <img src="./img/hotel-presidente-4s.jpg" class="img-fluid" alt="Responsive image" style="width: 100%; height: 450px;">
+        <!--flex-wrap acomoda las columnas excedentes-->
+        <!--
+        <div class="card-columns">
+                -->
+        <div class="d-flex flex-wrap ">
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <div class="card-header" style="background-color: #1a3a1b; color: #c6fdc8;">
+                    <h5 class="card-title">Lista de productos</h5>
+                </div>
+                <!-- importante clase card-img-top -->
+                <img class="card-img-top" src="./img/hotel-presidente-4s.jpg" alt="hotel img">
+                <div class="card-body" style="background-color: #3e8240; color: #062208;">
+                    <h6 class="card-subtitle" style="background-color: #7fb881;">subtitulo</h6>
+                    <p class="card-text">
+                        <li>Producto 1</li>
+                        <li>Producto 2</li>
+                        <li>Producto 3</li>
+                    </p>
+                    <h6 class="card-footer" style="background-color: #7fb881;">Disponibles</h6>
+                </div>
+                <div>
+                    <a class="btn btn-primary btn-reserva" href="#" role="button"><span class="oi oi-plus" style="padding-right: 10px;"></span>Ver más</a>  
+                </div>
+            </div>
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <div class="card-header" style="background-color: #1a3a1b; color: #c6fdc8;">
+                    <h5 class="card-title">Lista de productos</h5>
+                </div>
+                <img class="card-img-top" src="./img/hotel-presidente-4s.jpg" alt="hotel img">
+                <div class="card-body" style="background-color: #3e8240; color: #062208;">
+                    <h6 class="card-subtitle" style="background-color: #7fb881;">subtitulo</h6>
+                    <p class="card-text">
+                        <li>Producto 1</li>
+                        <li>Producto 2</li>
+                        <li>Producto 3</li>
+                    </p>
+                    <h6 class="card-footer" style="background-color: #7fb881;">Disponibles</h6>
+                </div>
+                <div>
+                    <a class="btn btn-primary btn-reserva" href="#" role="button"><span class="oi oi-plus" style="padding-right: 10px;"></span>Ver más</a>  
+                </div>
+            </div>
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <div class="card-header" style="background-color: #1a3a1b; color: #c6fdc8;">
+                    <h5 class="card-title">Lista de productos</h5>
+                </div>
+                <img class="card-img-top" src="./img/hotel-presidente-4s.jpg" alt="hotel img">
+                <div class="card-body" style="background-color: #3e8240; color: #062208;">
+                    <h6 class="card-subtitle" style="background-color: #7fb881;">subtitulo</h6>
+                    <p class="card-text">
+                        <li>Producto 1</li>
+                        <li>Producto 2</li>
+                        <li>Producto 3</li>
+                    </p>
+                    <h6 class="card-footer" style="background-color: #7fb881;">Disponibles</h6>
+                </div>
+                <div>
+                    <a class="btn btn-primary btn-reserva" href="#" role="button"><span class="oi oi-plus" style="padding-right: 10px;"></span>Ver más</a>  
+                </div>
+            </div>
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <div class="card-header" style="background-color: #1a3a1b; color: #c6fdc8;">
+                    <h5 class="card-title">Lista de productos</h5>
+                </div>
+                <img class="card-img-top" src="./img/hotel-presidente-4s.jpg" alt="hotel img">
+                <div class="card-body" style="background-color: #3e8240; color: #062208;">
+                    <h6 class="card-subtitle" style="background-color: #7fb881;">subtitulo</h6>
+                    <p class="card-text">
+                        <li>Producto 1</li>
+                        <li>Producto 2</li>
+                        <li>Producto 3</li>
+                    </p>
+                    <h6 class="card-footer" style="background-color: #7fb881;">Disponibles</h6>
+                </div>
+                <div>
+                    <a class="btn btn-primary btn-reserva" href="#" role="button"><span class="oi oi-plus" style="padding-right: 10px;"></span>Ver más</a>  
+                </div>
+            </div>
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <div class="card-header" style="background-color: #1a3a1b; color: #c6fdc8;">
+                    <h5 class="card-title">Lista de productos</h5>
+                </div>
+                <img class="card-img-top" src="./img/hotel-presidente-4s.jpg" alt="hotel img">
+                <div class="card-body" style="background-color: #3e8240; color: #062208;">
+                    <h6 class="card-subtitle" style="background-color: #7fb881;">subtitulo</h6>
+                    <p class="card-text">
+                        <li>Producto 1</li>
+                        <li>Producto 2</li>
+                        <li>Producto 3</li>
+                    </p>
+                    <h6 class="card-footer" style="background-color: #7fb881;">Disponibles</h6>
+                </div>
+                <div>
+                    <a class="btn btn-primary btn-reserva" href="#" role="button"><span class="oi oi-plus" style="padding-right: 10px;"></span>Ver más</a>  
+                </div>
+            </div>
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <div class="card-header" style="background-color: #1a3a1b; color: #c6fdc8;">
+                    <h5 class="card-title">Lista de productos</h5>
+                </div>
+                <img class="card-img-top" src="./img/hotel-presidente-4s.jpg" alt="hotel img">
+                <div class="card-body" style="background-color: #3e8240; color: #062208;">
+                    <h6 class="card-subtitle" style="background-color: #7fb881;">subtitulo</h6>
+                    <p class="card-text">
+                        <li>Producto 1</li>
+                        <li>Producto 2</li>
+                        <li>Producto 3</li>
+                    </p>
+                    <h6 class="card-footer" style="background-color: #7fb881;">Disponibles</h6>
+                </div>
+                <div>
+                    <a class="btn btn-primary btn-reserva" href="#" role="button"><span class="oi oi-plus" style="padding-right: 10px;"></span>Ver más</a>  
+                </div>
+            </div>
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <div class="card-header" style="background-color: #1a3a1b; color: #c6fdc8;">
+                    <h5 class="card-title">Lista de productos</h5>
+                </div>
+                <img class="card-img-top" src="./img/hotel-presidente-4s.jpg" alt="hotel img">
+                <div class="card-body" style="background-color: #3e8240; color: #062208;">
+                    <h6 class="card-subtitle" style="background-color: #7fb881;">subtitulo</h6>
+                    <p class="card-text">
+                        <li>Producto 1</li>
+                        <li>Producto 2</li>
+                        <li>Producto 3</li>
+                    </p>
+                    <h6 class="card-footer" style="background-color: #7fb881;">Disponibles</h6>
+                </div>
+                <div>
+                    <a class="btn btn-primary btn-reserva" href="#" role="button"><span class="oi oi-plus" style="padding-right: 10px;"></span>Ver más</a>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- info como links a redes sociales-->
+    <footer>
+        <div class="row">
+            <div class="col-sm-4 d-flex flex-column">
+                <a href="http://www.google.com">Google</a>
+                <a href="http://www.reddit.com">Reddit</a>
+                <a href="https://store.steampowered.com/?l=spanish">Steam</a>
+            </div>
+            <div class="col-sm-4">
+                <address>
+                    <h3>Oficina central</h3>
+                    <p><span class="oi oi-home footer-adress-icon"></span>cualquiera 123, Tokyo, Japan</p>
+                    <p><span class="oi oi-phone footer-adress-icon"></span>+000000000</p>
+                    <p><span class="oi oi-inbox footer-adress-icon"></span>email@email.com</p>
+                </address>
+            </div>
+            <div class="col-sm-4  d-flex flex-column align-items-end">
+                <a href="htt://www.google.com">About us</a>
+                <a href="htt://www.reddit.com">Contact</a>
+                <a href="htt://www.steam.com">FAQ's</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js" ></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

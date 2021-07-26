@@ -1,0 +1,40 @@
+
+/*especificamos clase jumbotron y modificamos el color*/
+/*leer flex en boostrap*/
+
+.jumbotron{
+    background-color: rgb(55, 104, 55);
+    color: rgb(93, 190, 118);
+    margin-top: 50px;
+}
+
+body{
+    background: rgb(192, 223, 192);
+}
+
+.btn{
+    background-color: rgb(4, 112, 4);
+}
+
+footer{
+    padding: 10px 10px 0 10px;
+    background-color: rgb(145, 192, 145);
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.card-hotel{
+    flex: 1 200px;
+    /*sentido horario*/
+    /*padding: 2px 0px 2px 0px;*/
+    margin-top: 10px;
+}
+
+.btn-reserva{
+    width: 100%;
+    border-radius: 0px;
+}
+
+.footer-adress-icon{
+    padding-right: 10px;
+}
